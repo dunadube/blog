@@ -1,0 +1,93 @@
+/* Cleafix for floats */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 0.9em;
+}
+h1 {
+  margin: 0px;
+  padding: 5px;
+  /* font-size: 1.5em; */
+}
+
+h2 {
+  margin: 0px;
+  padding: 5px;
+  font-size: 1.0em;
+}
+
+#aboutme blockquote {
+  font-style: italic;
+}
+
+/* Format a career station */
+#career .station h2 {
+  font-weight: normal;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+#career .station h2 .year {
+  float: left;
+  margin-right: 5px;
+}
+#career .station h2 .year:after {
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#career .station h2 .jobtitle {
+  float: left;
+  font-weight: bold;
+}
+#career .station h2 .company {
+  float: left;
+}
+#career .station h2 .company:before {
+  content: "@";
+}
+
+/* Format a education station */
+#education .station h2 {
+  font-weight: normal;
+  overflow: hidden;
+}
+#education .station h2 .year {
+  float: left;
+}
+#education .station h2 .year:after {
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#education .station h2 .university {
+  float: left;
+  margin-right: 5px;
+}
+#education .station h2 .university:before {
+  content: "@";
+}
+#education .station h2 .title {
+  float: left;
+  font-weight: bold;
+}
+
+/* General station formatting */
+.station h2 .tag {
+  float: left;
+  padding: 0.25em; 
+  margin: 0.25em; 
+  /* margin: 2px; */
+  font-size: 0.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #fff;
+  background: #3792b3 url(glass-btn.png) repeat-x 0 50%;
+  border: 1px solid #3792b3;
+}

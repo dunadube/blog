@@ -1,0 +1,135 @@
+/* Cleafix for floats */
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Basic styling */
+ul { 
+  margin: 25px;
+  list-style: disc outside none;
+}
+
+#heading {
+  color: #3792b3;
+  margin-top: 0.3em;
+  font: 2.8em/1.8 OFL Sorts Mill Goudy,Georgia,serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  border-bottom: none;
+}
+
+#heading .special { font-weight: normal; color: #aaa;}
+
+h1 {
+  color: #3792b3;
+  margin-top: 0.2em;
+  font: 2.25em/1.5 OFL Sorts Mill Goudy,Georgia,serif;
+  border-bottom: 3px solid;
+} /* 40px/16=2.5em */
+
+h2 {
+  color: #666666;
+  margin-top: 1em;
+  font: 1.5em/1.5 OFL Sorts Mill Goudy,Georgia,serif;
+  border-bottom: 1px dotted #ccc;
+} /* 30px/16=1.875em */
+
+a { text-decoration: none; color: #3792b3; }
+p { margin-top: 15px;}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  font: 1em/1.3 Gill Sans,My Gill Sans,sans-serif;
+}
+
+/* About me styling */
+#aboutme blockquote {
+  margin: 0 auto;
+  width: 60%;
+  padding-left: 5px;
+  /* margin: 20px 10px; */
+  border-left: 5px solid #aaaaaa;
+  font: 1.2em/1.1 OFL Sorts Mill Goudy,Georgia,serif;
+  font-style: italic;
+  color: #aaaaaa;
+}
+#aboutme blockquote p {
+  background-image: url(closequote1.gif);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+#aboutme blockquote p cite {
+  color: #ccc;
+  display: block;
+  font-size: 0.8em;
+}
+
+/* Format a career station */
+#career .station h2 {
+  font-weight: normal;
+  overflow: hidden;
+}
+#career .station h2 .year {
+  float: left;
+  margin-right: 5px;
+}
+#career .station h2 .year:after {
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#career .station h2 .jobtitle {
+  float: left;
+  font-weight: bold;
+}
+#career .station h2 .company {
+  float: left;
+}
+#career .station h2 .company:before {
+  content: "@";
+}
+
+/* Format a education station */
+#education .station h2 {
+  font-weight: normal;
+  overflow: hidden;
+}
+#education .station h2 .year {
+  float: left;
+}
+#education .station h2 .year:after {
+  content: "|";
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#education .station h2 .university {
+  float: left;
+  margin-right: 5px;
+}
+#education .station h2 .university:before {
+  content: "@";
+}
+#education .station h2 .title {
+  float: left;
+  font-weight: bold;
+}
+
+/* General station formatting */
+.station h2 .tag {
+  float: left;
+  padding: 0.25em; 
+  margin: 0.25em; 
+  /* margin: 2px; */
+  font-size: 0.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #fff;
+  background: #3792b3 url(glass-btn.png) repeat-x 0 50%;
+  border: 1px solid #3792b3;
+}

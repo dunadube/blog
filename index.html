@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+---
+
+<div id="posts">
+
+  {%for post in site.posts offset: 0 limit: 10 %}
+
+  <h3><a href="{{ post.url }}"><span>{{ post.date | date_to_string }}</span> - {{ post.title }}</a></h3>
+  
+  {{ post.content }}
+
+  {% endfor %}
+
+</div>
